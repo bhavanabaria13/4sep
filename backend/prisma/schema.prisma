@@ -1,0 +1,137 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Status {
+  PENDING
+  APPROVED
+  REJECTED
+  DRAFT
+  PUBLISHED
+}
+
+model User {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  password  String
+  name      String
+  role      String   @default("admin")
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Category {
+  id        String   @id @default(cuid())
+  name      String
+  slug      String
+  type      String   // game | dapp | blog
+  createdAt DateTime @default(now())
+
+  @@unique([slug, type])
+  @@unique([name, type])
+}
+
+model Game {
+  id            String   @id @default(cuid())
+  title         String
+  slug          String   @unique
+  shortDesc     String
+  description   String
+  status        Status   @default(PENDING)
+  rank          Int      @default(999)
+  featured      Boolean  @default(false)
+  thumbnail     String?
+  logo          String?
+  banner        String?
+  blockchain    String
+  category      String
+  website       String?
+  github        String?
+  videoUrl      String?
+  gallery       String[] @default([])
+  features      String[] @default([])
+  techStack     String[] @default([])
+  views         Int      @default(0)
+  likes         Int      @default(0)
+  metaTitle     String?
+  metaDesc      String?
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}
+
+model Dapp {
+  id            String   @id @default(cuid())
+  title         String
+  slug          String   @unique
+  shortDesc     String
+  description   String
+  status        Status   @default(PENDING)
+  rank          Int      @default(999)
+  featured      Boolean  @default(false)
+  thumbnail     String?
+  logo          String?
+  banner        String?
+  blockchain    String
+  category      String
+  website       String?
+  github        String?
+  videoUrl      String?
+  gallery       String[] @default([])
+  features      String[] @default([])
+  techStack     String[] @default([])
+  views         Int      @default(0)
+  likes         Int      @default(0)
+  metaTitle     String?
+  metaDesc      String?
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}
+
+model Blog {
+  id            String   @id @default(cuid())
+  title         String
+  slug          String   @unique
+  excerpt       String
+  content       String   // HTML from TipTap
+  status        Status   @default(DRAFT)
+  featured      Boolean  @default(false)
+  thumbnail     String?
+  banner        String?
+  category      String
+  tags          String[] @default([])
+  author        String   @default("Admin")
+  readingTime   Int      @default(5)
+  views         Int      @default(0)
+  likes         Int      @default(0)
+  metaTitle     String?
+  metaDesc      String?
+  publishedAt   DateTime?
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}
+
+model ContactMessage {
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  subject   String
+  message   String
+  createdAt DateTime @default(now())
+}
+
+model NewsletterSub {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  createdAt DateTime @default(now())
+}
+
+model Setting {
+  key       String   @id
+  value     String
+  updatedAt DateTime @updatedAt
+}

@@ -1,0 +1,4 @@
+    border: 1px solid;
+    padding: 7px;
+    height: 42px;
+    border-radius: 9px;

@@ -1,0 +1,110 @@
+{
+  "theme": {
+    "archetype": "7",
+    "name": "Electric & Neon (Dark Web3 Luxury)",
+    "description": "Dark theme with blue and purple gradients, glassmorphism cards, modern DappRadar aesthetic.",
+    "mode": "dark"
+  },
+  "colors": {
+    "background": {
+      "default": "bg-slate-950",
+      "surface": "bg-slate-900/50",
+      "glass": "bg-white/5 backdrop-blur-xl",
+      "glassHover": "hover:bg-white/10"
+    },
+    "text": {
+      "primary": "text-white",
+      "secondary": "text-slate-400",
+      "accent": "text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500"
+    },
+    "border": {
+      "default": "border-white/10",
+      "focus": "border-purple-500/50"
+    },
+    "gradients": {
+      "primary": "bg-gradient-to-r from-blue-600 to-purple-600",
+      "primaryHover": "hover:from-blue-500 hover:to-purple-500"
+    }
+  },
+  "typography": {
+    "fonts": {
+      "heading": "Outfit, sans-serif",
+      "body": "Manrope, sans-serif"
+    },
+    "sizes": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl tracking-tight font-black",
+      "h2": "text-2xl sm:text-3xl lg:text-4xl tracking-tight font-bold",
+      "h3": "text-xl sm:text-2xl tracking-tight font-semibold",
+      "body": "text-base leading-relaxed",
+      "small": "text-sm"
+    }
+  },
+  "layout": {
+    "spacing": {
+      "section": "py-20 md:py-32",
+      "container": "container mx-auto px-4 md:px-8",
+      "cardPadding": "p-6"
+    },
+    "borderRadius": {
+      "card": "rounded-2xl",
+      "button": "rounded-xl",
+      "badge": "rounded-full"
+    },
+    "grid": {
+      "gamesList": "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6",
+      "bentoDashboard": "grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6"
+    }
+  },
+  "components": {
+    "cards": {
+      "style": "bg-white/5 border border-white/10 backdrop-blur-xl rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:border-purple-500/30 hover:shadow-[0_8px_30px_rgba(139,92,246,0.1)]",
+      "imageWrapper": "relative aspect-video w-full overflow-hidden",
+      "content": "p-5 flex flex-col gap-3"
+    },
+    "buttons": {
+      "primary": "inline-flex items-center justify-center px-6 py-3 rounded-xl bg-gradient-to-r from-blue-600 to-purple-600 text-white font-medium transition-all hover:shadow-[0_0_20px_rgba(139,92,246,0.4)] hover:scale-105",
+      "secondary": "inline-flex items-center justify-center px-6 py-3 rounded-xl bg-white/10 border border-white/20 text-white font-medium transition-all hover:bg-white/20"
+    },
+    "badges": {
+      "genre": "absolute top-3 left-3 bg-black/60 backdrop-blur-md border border-white/10 text-white text-xs px-3 py-1 rounded-full font-medium"
+    }
+  },
+  "media": {
+    "images": {
+      "hero_background": "https://images.unsplash.com/photo-1637825891028-564f672aa42c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2OTV8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMGRhcmslMjBuZW9uJTIwYmx1ZSUyMHB1cnBsZSUyMHRlY2hub2xvZ3l8ZW58MHx8fHwxNzgzMzQ2NTAyfDA&ixlib=rb-4.1.0&q=85",
+      "game_thumbnails": [
+        "https://images.unsplash.com/photo-1698450998458-0bc1045788a1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODF8MHwxfHNlYXJjaHwxfHx2aWRlbyUyMGdhbWUlMjBmYW50YXN5JTIwc2NyZWVuc2hvdHxlbnwwfHx8fDE3ODMzNDY1MDJ8MA&ixlib=rb-4.1.0&q=85",
+        "https://images.unsplash.com/photo-1608741869829-8eb30661c7be?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODF8MHwxfHNlYXJjaHwyfHx2aWRlbyUyMGdhbWUlMjBmYW50YXN5JTIwc2NyZWVuc2hvdHxlbnwwfHx8fDE3ODMzNDY1MDJ8MA&ixlib=rb-4.1.0&q=85",
+        "https://images.unsplash.com/photo-1672872476232-da16b45c9001?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDF8MHwxfHNlYXJjaHwyfHxjeWJlcnB1bmslMjBjaXR5JTIwZGFyayUyMG5pZ2h0fGVufDB8fHx8MTc4MzM0NjUwMnww&ixlib=rb-4.1.0&q=85"
+      ],
+      "dapp_thumbnails": [
+        "https://images.unsplash.com/photo-1666875753105-c63a6f3bdc86?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDJ8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjBkYXNoYm9hcmQlMjBhbmFseXRpY3MlMjBhcHB8ZW58MHx8fHwxNzgzMzQ2NTAyfDA&ixlib=rb-4.1.0&q=85",
+        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDF8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBkYXNoYm9hcmQlMjBhbmFseXRpY3MlMjBhcHB8ZW58MHx8fHwxNzgzMzQ2NTAyfDA&ixlib=rb-4.1.0&q=85"
+      ],
+      "blog_thumbnails": [
+        "https://images.unsplash.com/photo-1654198340681-a2e0fc449f1b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2OTV8MHwxfHNlYXJjaHwzfHxhYnN0cmFjdCUyMGRhcmslMjBuZW9uJTIwYmx1ZSUyMHB1cnBsZSUyMHRlY2hub2xvZ3l8ZW58MHx8fHwxNzgzMzQ2NTAyfDA&ixlib=rb-4.1.0&q=85",
+        "https://images.unsplash.com/photo-1563089145-599997674d42?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2OTV8MHwxfHNlYXJjaHwyfHxhYnN0cmFjdCUyMGRhcmslMjBuZW9uJTIwYmx1ZSUyMHB1cnBsZSUyMHRlY2hub2xvZ3l8ZW58MHx8fHwxNzgzMzQ2NTAyfDA&ixlib=rb-4.1.0&q=85"
+      ]
+    }
+  },
+  "icons_library": "lucide-react",
+  "animations": {
+    "hover": "transition-all duration-300 ease-out",
+    "card_hover": "hover:-translate-y-1 hover:shadow-lg hover:shadow-purple-500/20",
+    "framer_motion_variants": {
+      "hidden": { "opacity": 0, "y": 20 },
+      "visible": { "opacity": 1, "y": 0, "transition": { "duration": 0.5 } }
+    }
+  },
+  "instructions_to_main_agent": [
+    "Use Tailwind CSS for all styling. Ensure dark mode is strictly enforced globally (bg-slate-950).",
+    "Add 'data-testid' to ALL interactive elements, forms, and cards.",
+    "Implement glassmorphism for header, cards, and dropdowns (bg-white/5 backdrop-blur-xl border border-white/10).",
+    "Do not use transparent headers. Use glassmorphism for sticky header.",
+    "Use Framer Motion for page transitions and staggering lists.",
+    "For icons, use lucide-react. For 3D or advanced charts, use Recharts for Admin dashboard.",
+    "Avoid Shadcn 'Card' component if it restricts creative glassmorphism, instead build custom HTML/Tailwind cards using the styles provided in this JSON.",
+    "Ensure the layout feels spacious and premium. Maintain contrast for text.",
+    "Adhere to .js files, no TypeScript."
+  ]
+}
